@@ -1,0 +1,301 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*      H E A D E R     */
+header {
+    width: 100%;
+    /*min-width: 100vw;*/
+    /*max-width: 100vw;*/
+    /*background: #c2c2c2;*/
+}
+
+.container .logo {
+    height: 80px;
+}
+.logo img {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    /*border: 2px solid blue;*/
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    /*border-bottom: 3px solid transparent;*/
+}
+.options .download:hover,
+.options .plans:hover {
+    border-bottom: 3px solid #3E92CC;
+}
+.options .login {
+    padding: 10px 25px;
+    border: 2px solid #3E92CC;
+    color: #3E92CC;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.options .singUp {
+    padding: 10px 25px;
+    background: #3E92CC;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.options .login:hover{
+    border: 2px solid #05668d;
+    color: #05668d;
+    transition: all .3s ease-in-out;
+}
+.options .singUp:hover {
+    background: #05668d;
+    transition: all .3s ease-in-out;
+}
+
+
+/*CONTAINER1    Y    CONTAINER2*/
+.main {
+    margin-top: 0;
+    background: #e9ecef;
+    border: 1px solid transparent; /*DUDA*/
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+}
+.form {
+    width: 60%;
+    /*border: 1px solid green;*/
+}
+.formText {
+    /*border: 1px solid black;*/
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+
+.containerPicture {
+    width: 40%;
+}
+.containerPicture img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.iconsStart {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /*border: 1px solid blue;*/
+}
+.iconsStart h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #343a40;
+    margin-top: 80px;
+    width: 100%;
+}
+.iconsStart a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 8px;
+    /*border: 1px solid blue;*/
+}
+.iconsStart .fab {
+    font-size: 22px;
+    /*text-align: start;*/
+}
+.iconsStart .apple {
+    background: #000;
+    color: #fff;
+    width: 48%;
+    border: 2px solid transparent;
+}
+.iconsStart .apple:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: all .2s ease-in-out;
+}
+.iconsStart .fb {
+    background: #0078d7;
+    color: #fff;
+    width: 48%;
+    border: 2px solid transparent;
+}
+.iconsStart .fb:hover {
+    background: #fff;
+    color: #0078d7;
+    border: 2px solid #0078d7;
+    transition: all .2s ease-in-out;
+}
+.iconsStart .google {
+    margin-top: 12px;
+    background: #fff;
+    color: #4285f4;
+    width: 100%;
+    border: 2px solid transparent;
+}
+.iconsStart .google:hover {
+    background: #4285f4;
+    color: #fff;
+    border: 2px solid #4285f4;
+    transition: all .2s ease-in-out;
+}
+
+
+
+.formInputs {
+    /*border: 1px solid yellow;*/
+    /*height: 100%;*/
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.formInputs input[type="text"],
+.formInputs input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.formInputs input[type="submit"] {
+    margin: auto;
+    margin-top: 15px;
+    width: 80%;
+    padding: 14px;
+    background: #ff9f1c;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.formInputs input[type="submit"]:hover {
+    background: #ff5400;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.formInputs a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.formInputs a:hover {
+    text-decoration: underline;
+    transition: all .2s ease-in-out;
+}
+.formInputs p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+/*    F  O  O  T  E  R      */
+footer  {
+    width: 100%;
+    background: #000;
+    color: #fff;
+}
+.container {
+    border: 1px solid white;
+}
+.containerFooter a {
+    display:block;
+    text-decoration: none;
+    color: #fff;
+}
+.containerFooter .logoRedesFooter a {
+    display: inline-block;
+}
+.containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+.logoRedesFooter,
+.deezer,
+.explore,
+.howAreWe {
+    width: 20%;
+    /*padding: 10px;*/
+}
+
+.containerFooter .logoRedesFooter {
+    border: 1px solid yellow;
+    margin-top: 100px;
+    text-align: center;
+}
+.container .logoRedesFooter img {
+    width: 100%;
+}
+.container .logoRedesFooter a {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 3px;
+    
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+}
+
+
+
+
