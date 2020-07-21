@@ -78,15 +78,19 @@ header {
 }
 
 
+
+
 /*CONTAINER1    Y    CONTAINER2*/
 .main {
     margin-top: 0;
     background: #e9ecef;
     border: 1px solid transparent; /*DUDA*/
+    /*border: 1px solid black;*/
 }
 .container1 {
     display: flex;
     flex-direction: row;
+    /*border: 1px solid blue;*/
 }
 .form {
     width: 60%;
@@ -94,7 +98,7 @@ header {
 }
 .formText {
     /*border: 1px solid black;*/
-    width: 60%;
+    width: 450px;
     height: 100%;
     margin: auto;
     text-align: center;
@@ -110,6 +114,7 @@ header {
 .containerPicture img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     vertical-align: top;
 }
 
@@ -244,16 +249,13 @@ header {
 
 
 
-
 /*    F  O  O  T  E  R      */
 footer  {
     width: 100%;
-    background: #000;
+    background: #2b2d42;
     color: #fff;
 }
-.container {
-    border: 1px solid white;
-}
+
 .containerFooter a {
     display:block;
     text-decoration: none;
@@ -262,28 +264,25 @@ footer  {
 .containerFooter .logoRedesFooter a {
     display: inline-block;
 }
-.containerFooter {
+.containerFooter .sectionsFooter {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     /*justify-content: space-between;*/
+    margin-top: 100px;
 }
 
 .logoRedesFooter,
 .deezer,
 .explore,
 .howAreWe {
-    width: 20%;
+    width: 220px;
     /*padding: 10px;*/
 }
 
-.containerFooter .logoRedesFooter {
-    border: 1px solid yellow;
-    margin-top: 100px;
-    text-align: center;
-}
+
 .container .logoRedesFooter img {
-    width: 100%;
+    width: 90%;
 }
 .container .logoRedesFooter a {
     margin-top: 20px;
@@ -296,6 +295,88 @@ footer  {
     border-radius: 100%;
 }
 
+.deezer p,
+.explore p,
+.howAreWe p,
+.legal p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2176AE;
+    margin-bottom: 40px;
+}
+.deezer a,
+.explore a,
+.howAreWe a,
+.legal a {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+.containerFooter a:hover {
+    color: #ff9f1c;
+}
+
+.language p{
+    text-align: end;
+
+    font-family: 'Roboto', sans-serif;
+}
 
 
+
+
+/*M E D I A    Q U E R Y S*/
+@media screen and (max-width:700px) {
+    .containerPicture {
+        display: none;
+    }
+    .form {
+        width: 100%;
+    }
+    .logoRedesFooter,
+    .deezer,
+    .explore,
+    .howAreWe {
+        width: 150px;
+        /*padding: 10px;*/
+    }
+}
+
+@media screen and (max-width:640px) {
+    header {
+        height: 150px;
+        width: 100%;
+        /*border: 1px solid black;*/
+    }
+    .container  {
+        flex-direction: column;
+    }
+    .options {
+        margin-top: 20px;
+    }
+    .formText {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width:520px) {
+    header {
+        height: 210px;
+    }
+    
+    .options {
+        line-height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .options .login {
+        padding: 1px 25px;
+    }
+    .options .singUp {
+        padding: 1px 25px;
+    }
+    
+}
 
